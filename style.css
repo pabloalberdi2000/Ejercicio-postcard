@@ -1,0 +1,84 @@
+/* Configuración de la página */
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Handlee', cursive;
+}
+
+/* La tarjeta blanca */
+.postcard {
+    background-color: white;
+    width: 600px;
+    height: auto;
+    padding: 25px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+/* Header: Espaciado entre título e imagen */
+.postcard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.postcard-header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.postcard-header img {
+    width: 60px;
+}
+
+/* El truco de las dos columnas */
+.postcard-content {
+    display: flex; /* Esto alinea el texto y los inputs de lado a lado */
+    gap: 30px;     /* Espacio entre columnas */
+}
+
+.column-left {
+    flex: 1.2;     /* Un poco más de espacio para el texto */
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.column-right {
+    flex: 1;       /* Espacio para los inputs */
+    display: flex;
+    flex-direction: column; /* Apila los inputs verticalmente */
+}
+
+/* Inputs con estilo de "línea" */
+.column-right input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 8px 5px;
+    font-family: 'Handlee', cursive;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Pie de página */
+.postcard-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Handlee', cursive;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
